@@ -41,15 +41,14 @@ export const taskSlice = createSlice({
                 return task;
             });
 
-            console.log(tasks);
-            console.log(taskId);
-
             localStorage.setItem('task', JSON.stringify(tasks));
 
             return tasks;
         },
         deleteTask: (state, action) => {
-            return state.filter((task) => task.id !== action.payload.taskId);
+            let tasks = state.filter((task) => task.id !== action.payload.taskId);
+            localStorage.setItem('task', JSON.stringify(tasks));
+            return tasks;
         },
     }
 });
