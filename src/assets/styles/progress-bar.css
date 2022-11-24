@@ -1,0 +1,11 @@
+.base-bar {
+    background: #E3E8EE;
+    border-radius: 6px;
+    /*width: 150px;*/
+    height: 5px;
+}
+
+.reactive-bar {
+    background: #4BA8A8;
+    height: 5px;
+}

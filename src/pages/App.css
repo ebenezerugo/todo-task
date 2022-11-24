@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.main > :first-child {
+    flex-basis: 94px;
+    flex-grow: 1;
+}
+
+.main > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+}
