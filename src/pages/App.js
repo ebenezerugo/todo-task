@@ -14,6 +14,7 @@ function App() {
             <div className="application">
                 <Core/>
             </div>
+            <div></div>
         </div>
     </main>
   );
